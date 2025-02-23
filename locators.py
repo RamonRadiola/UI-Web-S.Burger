@@ -39,8 +39,7 @@ class Locators:
 
     ID_AFTER_CREATE_ORDER = (By.XPATH, '//*[@class="Modal_modal__title_shadow__3ikwq Modal_modal__title__2L34m text text_type_digits-large mb-8"]') #отсюда достать цифры номера заказа ПОСЛЕ ОФОРМЛЕНИЯ
     ID_IN_READING = (By.XPATH, '//*[@class ="text text_type_digits-default mb-2"]') #отсюда достать цифры номера заказа В РАБОТЕ
-    ID_UP_ELEMENT_OF_STORY_ORDER_MB = (By.XPATH, '//*[@class="text text_type_digits-default mb-10 mt-5"]') #отсюда достать цифры номера заказа &&&&&&
-    # ID_UP_ELEMENT_OF_STORY_ORDER = (By.XPATH, '//*[@class="OrderHistory_listItem__2x95r mb-6"][1]') #отсюда достать цифры номера заказа В ИСТОРИИ ЗАКАЗОВ/ЛЕНТЕ ЗАКАЗОВ
+    ID_UP_ELEMENT_OF_STORY_ORDER_MB = (By.XPATH, '//*[@class="text text_type_digits-default mb-10 mt-5"]')
     ID_UP_ELEMENT_OF_STORY_ORDER_DIGIT = (By.XPATH, '//*[@class="text text_type_digits-default"]') #отсюда достать цифры номера заказа В ИСТОРИИ ЗАКАЗОВ/ЛЕНТЕ ЗАКАЗОВ
 
     BUTTON_CLOSE_ID_ORDER = (By.CSS_SELECTOR, "#root > div > section.Modal_modal_opened__3ISw4.Modal_modal__P3_V5 > div.Modal_modal__container__Wo2l_ > button > svg")

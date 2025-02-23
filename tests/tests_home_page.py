@@ -31,7 +31,7 @@ class TestHomePage:
         home_page.check_is_counter()
 
     @allure.title("Проверка возможности оформления заказа залогиненным пользователем")
-    def test_place_an_order(self, login):
-        login.drag_element()
-        login.click_on_button_place_an_order()
-        login.check_is_place_an_order()
+    def test_place_an_order(self, login, home_page):
+        home_page.drag_element()
+        home_page.click_on_button_place_an_order()
+        home_page.check_is_place_an_order()

@@ -1,3 +1,4 @@
+from data import TestUser
 from pages.base_page import BasePage
 from locators import Locators
 from constants import Constants
@@ -15,7 +16,7 @@ class RecoveryPasswordPage(BasePage):
 
     @allure.step("Ввод email»")
     def input_email_for_recovery_password(self):
-        self.input_email('romastepanov16333_tests@yandex.ru')
+        self.find_element_for_visio(locator=Locators.PHOLD_EMAIL).send_keys(TestUser.EMAIL)
 
     @allure.step("Клик по кнопке «Восстановить»")
     def click_on_recovery_password_button_second(self):

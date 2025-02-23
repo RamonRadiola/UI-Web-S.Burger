@@ -28,6 +28,11 @@ class BasePage:
     def find_element_for_visio(self, locator, time=50):
         return WebDriverWait(self.driver, time).until(EC.visibility_of_element_located(locator), message=f'Not find element {locator}')
 
+    @allure.step("базовый метод ожидания исчезновения элемента'")
+    def wait_of_element_for_invisibility(self, locator, time=20):
+        return WebDriverWait(self.driver, time).until(EC.invisibility_of_element_located(locator))
+
+
     @allure.step("Метод прокрутки страницы до нужного элемента")
     def scroll_to_element_base(self, locator):
         element = self.find_element_for_visio(locator)
@@ -36,14 +41,6 @@ class BasePage:
     @allure.step("Возвращает текущий url")
     def check_current_url(self):
         return self.driver.current_url
-
-    @allure.step("ввод email")
-    def input_email(self, email):
-        self.find_element_for_visio(locator=Locators.PHOLD_EMAIL).send_keys(email)
-
-    @allure.step("ввод password")
-    def input_password(self, password):
-        self.find_element_for_visio(locator=Locators.PHOLD_PASSWORD).send_keys(password)
 
     @allure.step("перетаскивание элемента")
     def drag_element(self):
