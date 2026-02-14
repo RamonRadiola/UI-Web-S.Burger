@@ -1,4 +1,4 @@
-#UI Web S.Burger
+UI Web S.Burger
 
 UI-тесты web-приложения сайта по заказу бургеров S.Burger
 Протестирована функциональность в Google Chrome и Mozilla FirefoxSelenium
