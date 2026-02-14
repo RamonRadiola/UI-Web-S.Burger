@@ -1,8 +1,8 @@
-UI Web S.Burger
+# UI Web S.Burger
 
-UI-тесты web-приложения сайта по заказу бургеров S.Burger
-Протестирована функциональность в Google Chrome и Mozilla FirefoxSelenium
-Применен паттерн Page Object Model
+## UI-тесты web-приложения сайта по заказу бургеров S.Burger
+## Протестирована функциональность в Google Chrome и Mozilla FirefoxSelenium
+## Применен паттерн Page Object Model
 
 1. Восстановление пароля
   - переход на страницу восстановления пароля по кнопке «Восстановить пароль»;
